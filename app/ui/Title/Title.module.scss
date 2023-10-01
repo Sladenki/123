@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('../../../fonts/Caveat/Caveat-VariableFont_wght.ttf') format('truetype');
+  }
 
 .TitleWrapper{
     border: 1px solid black;
@@ -8,7 +13,7 @@
 
     span{
         color: #000;
-        font-family: 'Caveat', cursive;
+        font-family: 'Caveat', sans-serif;
         font-size: 36px;
     }
 }
