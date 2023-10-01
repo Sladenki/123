@@ -1,0 +1,46 @@
+.ForYouWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 20px;
+    width: 100%;
+    padding: 2% 10% 2% 15%;
+
+    .textForYou{
+        width: 80%;
+        
+        ul{
+            li{
+                list-style-type: "◉ ";
+                color: #F6BEC2;
+                font-family: Roboto;
+                font-size: 23px;
+                font-style: normal;
+                font-weight: 200;
+                line-height: 125.188%;
+                margin-bottom: 8px;
+
+                span{
+                    color: #000;
+                    font-family: Roboto;
+                    font-size: 1.16rem;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: 125.188%;
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1005px)  {
+    .ForYouWrapper{
+        flex-direction: column;
+
+        .textForYou{
+            width: 100%;
+        }
+    }
+}

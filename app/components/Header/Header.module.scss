@@ -1,0 +1,16 @@
+.HeaderWrapper{
+    background-color: #FBFCFF;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0 20px 0;
+
+    span{
+        color: #374957;
+        font-family: Roboto;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+}

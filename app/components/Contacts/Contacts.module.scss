@@ -1,0 +1,60 @@
+.ContactsWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    .title{
+        width: 180px;
+    }
+
+    .links{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        grid-gap: 60px;
+
+        .SocialBlock{
+            display: flex;
+            flex-direction: row;
+            grid-gap: 15px;
+            align-items: center;
+
+            .SocialNetworkItem{
+                border: 1px solid black;
+                border-radius: 50%;
+                height: 60px;
+                width: 60px;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+            }
+
+            .textLink{
+                color: #000;
+                font-family: Roboto;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+
+        }
+        
+    }
+
+}
+
+@media only screen and (max-width: 790px)  {
+    .ContactsWrapper{
+        .links{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
