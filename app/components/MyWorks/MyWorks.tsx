@@ -10,14 +10,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-// import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-// import 'swiper/css/scrollbar';
-
 import ImgOne from '../../../images/MyWorks/1.jpg'
 import ImgTwo from '../../../images/MyWorks/2.jpg'
 import ImgThree from '../../../images/MyWorks/3.jpg'
@@ -51,9 +43,6 @@ const MyWorks = () => {
       if (window.innerWidth < 600) {
         setIsCenter(false)
       }
-
-
-    
     };
 
     window.addEventListener('resize', handleResize);
@@ -101,8 +90,32 @@ const MyWorks = () => {
             <Title name="Мои работы"/>
         </div>
 
+        {/* 1 */}
         <div className={styles.blocks}>
+          <Slider {...settings}>
+            <div className={styles.item} >
+              <Image src={ImgOne} alt='Аватарка' className={styles.item} width={400} height={250} />
+            </div>
+            <div>
+              <Image src={ImgTwo} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+            </div>
+            <div>
+              <Image src={ImgThree} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+            </div>
+            <div>
+              <Image src={ImgFour} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+            </div>
+            <div>
+              <Image src={ImgFive} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+            </div>
+            <div>
+              <Image src={ImgSix} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+            </div>
+          </Slider>
+      </div>
 
+      {/* 2 */}
+      <div className={styles.blocks}>
         <Slider {...settings}>
           <div className={styles.item} >
             <Image src={ImgOne} alt='Аватарка' className={styles.item} width={400} height={250} />
@@ -110,7 +123,7 @@ const MyWorks = () => {
           <div>
             <Image src={ImgTwo} alt='Аватарка' className={styles.item} width={400} height={250} /> 
           </div>
-           <div>
+          <div>
             <Image src={ImgThree} alt='Аватарка' className={styles.item} width={400} height={250} /> 
           </div>
           <div>
@@ -123,50 +136,32 @@ const MyWorks = () => {
             <Image src={ImgSix} alt='Аватарка' className={styles.item} width={400} height={250} /> 
           </div>
         </Slider>
+      </div>
 
-    </div>
-
-        {/* <div className={styles.blocks}>
-          <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
-            slidesPerView={slidesPerView}
-            slidesPerGroup={slidesPerGroup}
-            spaceBetween={10}
-            centeredSlides 
-            navigation
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
-            loop={true}
-            className={styles.swiperContainer}
-
-        >
-          <SwiperSlide>
-            <Image src={ImgOne} alt='Аватарка' className={styles.item} width={400} height={250} /> 
-          </SwiperSlide>
-
-          <SwiperSlide>
+      {/* 3 */}
+      <div className={styles.blocks}>
+        <Slider {...settings}>
+          <div className={styles.item} >
+            <Image src={ImgOne} alt='Аватарка' className={styles.item} width={400} height={250} />
+          </div>
+          <div>
             <Image src={ImgTwo} alt='Аватарка' className={styles.item} width={400} height={250} /> 
-          </SwiperSlide>
-
-          <SwiperSlide>
+          </div>
+          <div>
             <Image src={ImgThree} alt='Аватарка' className={styles.item} width={400} height={250} /> 
-          </SwiperSlide>
-
-          <SwiperSlide>
+          </div>
+          <div>
             <Image src={ImgFour} alt='Аватарка' className={styles.item} width={400} height={250} /> 
-          </SwiperSlide>
-
-          <SwiperSlide>
+          </div>
+          <div>
             <Image src={ImgFive} alt='Аватарка' className={styles.item} width={400} height={250} /> 
-          </SwiperSlide>
-
-          <SwiperSlide>
+          </div>
+          <div>
             <Image src={ImgSix} alt='Аватарка' className={styles.item} width={400} height={250} /> 
-          </SwiperSlide>
-          
-        </Swiper>
-      </div> */}
-       
+          </div>
+        </Slider>
+      </div>
+
     </div>
   )
 }
