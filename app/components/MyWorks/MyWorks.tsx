@@ -10,7 +10,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-// 1
+// Первый слайдер
 import ImgOneOne from '../../../images/MyWorks/one/1.jpeg'
 import ImgOneTwo from '../../../images/MyWorks/one/2.jpeg'
 import ImgOneThree from '../../../images/MyWorks/one/3.jpeg'
@@ -23,7 +23,7 @@ import ImgOneNine from '../../../images/MyWorks/one/9.jpeg'
 import ImgOneTen from '../../../images/MyWorks/one/10.jpeg'
 import ImgOneEleven from '../../../images/MyWorks/one/11.jpeg'
 
-// 2
+// Второй слайдер
 import ImgTwoOne from '../../../images/MyWorks/two/1.jpeg'
 import ImgTwoTwo from '../../../images/MyWorks/two/2.jpeg'
 import ImgTwoThree from '../../../images/MyWorks/two/3.jpg'
@@ -36,7 +36,7 @@ import ImgTwoNine from '../../../images/MyWorks/two/9.jpeg'
 import ImgTwoTen from '../../../images/MyWorks/two/10.jpeg'
 import ImgTwoEleven from '../../../images/MyWorks/two/11.jpeg'
 
-// 3
+// Третий слайдер
 import ImgThreeOne from '../../../images/MyWorks/three/1.jpg'
 import ImgThreeTwo from '../../../images/MyWorks/three/2.jpeg'
 import ImgThreeThree from '../../../images/MyWorks/three/3.jpg'
