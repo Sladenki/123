@@ -15,48 +15,55 @@ import ImgOneOne from '../../../images/MyWorks/1/1.jpeg'
 import ImgOneTwo from '../../../images/MyWorks/1/2.jpeg'
 import ImgOneThree from '../../../images/MyWorks/1/3.jpeg'
 import ImgOneFour from '../../../images/MyWorks/1/4.jpeg'
-import ImgOneFive from '../../../images/MyWorks/1/5.jpg'
-import ImgOneSix from '../../../images/MyWorks/1/6.jpg'
-import ImgOneSeven from '../../../images/MyWorks/1/7.jpg'
-import ImgOneEight from '../../../images/MyWorks/1/8.jpeg'
+import ImgOneFive from '../../../images/MyWorks/1/5.jpeg'
+import ImgOneSix from '../../../images/MyWorks/1/6.jpeg'
+import ImgOneSeven from '../../../images/MyWorks/1/7.jpeg'
+import ImgOneEight from '../../../images/MyWorks/1/8.jpg'
 import ImgOneNine from '../../../images/MyWorks/1/9.jpeg'
-import ImgOneTen from '../../../images/MyWorks/1/10.jpeg'
-import ImgOneEleven from '../../../images/MyWorks/1/11.jpeg'
+import ImgOneTen from '../../../images/MyWorks/1/10.jpg'
+import ImgOneEleven from '../../../images/MyWorks/1/11.jpg'
 
 // Второй слайдер
-import ImgTwoOne from '../../../images/MyWorks/2/1.jpeg'
+import ImgTwoOne from '../../../images/MyWorks/2/1.jpg'
 import ImgTwoTwo from '../../../images/MyWorks/2/2.jpeg'
 import ImgTwoThree from '../../../images/MyWorks/2/3.jpg'
 import ImgTwoFour from '../../../images/MyWorks/2/4.jpg'
-import ImgTwoFive from '../../../images/MyWorks/2/5.jpg'
-import ImgTwoSix from '../../../images/MyWorks/2/6.jpg'
-import ImgTwoSeven from '../../../images/MyWorks/2/7.jpg'
+import ImgTwoFive from '../../../images/MyWorks/2/5.jpeg'
+import ImgTwoSix from '../../../images/MyWorks/2/6.jpeg'
+import ImgTwoSeven from '../../../images/MyWorks/2/7.jpeg'
 import ImgTwoEight from '../../../images/MyWorks/2/8.jpg'
 import ImgTwoNine from '../../../images/MyWorks/2/9.jpeg'
-import ImgTwoTen from '../../../images/MyWorks/2/10.jpeg'
-import ImgTwoEleven from '../../../images/MyWorks/2/11.jpeg'
+import ImgTwoTen from '../../../images/MyWorks/2/10.jpg'
+import ImgTwoEleven from '../../../images/MyWorks/2/11.jpg'
 
 // Третий слайдер
-import ImgThreeOne from '../../../images/MyWorks/3/1.jpg'
-import ImgThreeTwo from '../../../images/MyWorks/3/2.jpeg'
+import ImgThreeOne from '../../../images/MyWorks/3/1.png'
+import ImgThreeTwo from '../../../images/MyWorks/3/2.jpg'
 import ImgThreeThree from '../../../images/MyWorks/3/3.jpg'
-import ImgThreeFour from '../../../images/MyWorks/3/4.jpg'
-import ImgThreeFive from '../../../images/MyWorks/3/5.png'
-import ImgThreeSix from '../../../images/MyWorks/3/6.jpeg'
+import ImgThreeFour from '../../../images/MyWorks/3/4.jpeg'
+import ImgThreeFive from '../../../images/MyWorks/3/5.jpg'
+import ImgThreeSix from '../../../images/MyWorks/3/6.jpg'
 import ImgThreeSeven from '../../../images/MyWorks/3/7.jpeg'
 import ImgThreeEight from '../../../images/MyWorks/3/8.jpg'
-import ImgThreeNine from '../../../images/MyWorks/3/9.jpg'
-import ImgThreeTen from '../../../images/MyWorks/3/10.jpg'
-import ImgThreeEleven from '../../../images/MyWorks/3/11.jpeg'
+import ImgThreeNine from '../../../images/MyWorks/3/9.jpeg'
+import ImgThreeTen from '../../../images/MyWorks/3/10.jpeg'
+import ImgThreeEleven from '../../../images/MyWorks/3/11.jpg'
 
 const MyWorks = () => {
 
   const [slidesPerView, setSlidesPerView] = useState(3);
   const [slidesPerGroup, setSlidesPerGroup] = useState(3);
   const [isCenter, setIsCenter] = useState(true)
+  const [isDots, setIsDots] = useState(true)
 
   useEffect(() => {
     const handleResize = () => {
+      if (window.innerWidth > 1200) {
+        setSlidesPerView(3);
+        setSlidesPerGroup(3);
+      }
+
+
       if (window.innerWidth < 1200) {
         setSlidesPerView(2);
         setSlidesPerGroup(2);
@@ -65,11 +72,7 @@ const MyWorks = () => {
       if (window.innerWidth < 820) {
         setSlidesPerView(1);
         setSlidesPerGroup(1);
-      }
-
-      if (window.innerWidth > 1200) {
-        setSlidesPerView(3);
-        setSlidesPerGroup(3);
+        setIsDots(false)
       }
 
       if (window.innerWidth < 600) {
@@ -86,7 +89,7 @@ const MyWorks = () => {
   }, []);
 
   var settings = {
-    dots: true,
+    dots: isDots,
     infinite: true,
     centerMode: isCenter,
     speed: 500,
@@ -105,37 +108,37 @@ const MyWorks = () => {
         <div className={styles.blocks}>
           <Slider {...settings}>
             <div className={styles.item} >
-              <Image src={ImgOneOne} alt='Аватарка' className={styles.item} width={270} height={300} />
+              <Image src={ImgOneOne} alt='Аватарка' className={styles.item} width={240} height={270} />
             </div>
             <div>
-              <Image src={ImgOneTwo} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+              <Image src={ImgOneTwo} alt='Аватарка' className={styles.item} width={240} height={270} /> 
             </div>
             <div>
-              <Image src={ImgOneThree} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+              <Image src={ImgOneThree} alt='Аватарка' className={styles.item} width={240} height={270} /> 
             </div>
             <div>
-              <Image src={ImgOneFour} alt='Аватарка' className={styles.item} width={320} height={300} /> 
+              <Image src={ImgOneFour} alt='Аватарка' className={styles.item} width={240} height={270} /> 
             </div>
             <div>
-              <Image src={ImgOneFive} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+              <Image src={ImgOneFive} alt='Аватарка' className={styles.item} width={240} height={270} /> 
             </div>
             <div>
-              <Image src={ImgOneSix} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+              <Image src={ImgOneSix} alt='Аватарка' className={styles.item} width={230} height={270} /> 
             </div>
             <div>
-              <Image src={ImgOneSeven} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+              <Image src={ImgOneSeven} alt='Аватарка' className={styles.item} width={300} height={270} /> 
             </div>
             <div>
-              <Image src={ImgOneEight} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+              <Image src={ImgOneEight} alt='Аватарка' className={styles.item} width={230} height={270} /> 
             </div>
             <div>
-              <Image src={ImgOneNine} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+              <Image src={ImgOneNine} alt='Аватарка' className={styles.item} width={220} height={270} /> 
             </div>
             <div>
-              <Image src={ImgOneTen} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+              <Image src={ImgOneTen} alt='Аватарка' className={styles.item} width={240} height={270} /> 
             </div>
             <div>
-              <Image src={ImgOneEleven} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+              <Image src={ImgOneEleven} alt='Аватарка' className={styles.item} width={230} height={270} /> 
             </div>
           </Slider>
       </div>
@@ -144,37 +147,37 @@ const MyWorks = () => {
       <div className={styles.blocks}>
         <Slider {...settings}>
           <div className={styles.item} >
-            <Image src={ImgTwoOne} alt='Аватарка' className={styles.item} width={270} height={300} />
+            <Image src={ImgTwoOne} alt='Аватарка' className={styles.item} width={240} height={300} />
           </div>
           <div>
-            <Image src={ImgTwoTwo} alt='Аватарка' className={styles.item} width={250} height={300} /> 
+            <Image src={ImgTwoTwo} alt='Аватарка' className={styles.item} width={240} height={300} /> 
           </div>
           <div>
-            <Image src={ImgTwoThree} alt='Аватарка' className={styles.item} width={260} height={300} /> 
+            <Image src={ImgTwoThree} alt='Аватарка' className={styles.item} width={250} height={300} /> 
           </div>
           <div>
-            <Image src={ImgTwoFour} alt='Аватарка' className={styles.item} width={280} height={300} /> 
+            <Image src={ImgTwoFour} alt='Аватарка' className={styles.item} width={260} height={300} /> 
           </div>
           <div>
-            <Image src={ImgTwoFive} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+            <Image src={ImgTwoFive} alt='Аватарка' className={styles.item} width={240} height={300} /> 
           </div>
           <div>
-            <Image src={ImgTwoSix} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+            <Image src={ImgTwoSix} alt='Аватарка' className={styles.item} width={230} height={300} /> 
           </div>
           <div>
-            <Image src={ImgTwoSeven} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+            <Image src={ImgTwoSeven} alt='Аватарка' className={styles.item} width={240} height={300} /> 
           </div>
           <div>
-            <Image src={ImgTwoEight} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+            <Image src={ImgTwoEight} alt='Аватарка' className={styles.item} width={250} height={300} /> 
           </div>
           <div>
-            <Image src={ImgTwoNine} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+            <Image src={ImgTwoNine} alt='Аватарка' className={styles.item} width={240} height={300} /> 
           </div>
           <div>
-            <Image src={ImgTwoTen} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+            <Image src={ImgTwoTen} alt='Аватарка' className={styles.item} width={240} height={300} /> 
           </div>
           <div>
-            <Image src={ImgTwoEleven} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+            <Image src={ImgTwoEleven} alt='Аватарка' className={styles.item} width={240} height={300} /> 
           </div>
         </Slider>
       </div>
@@ -183,37 +186,37 @@ const MyWorks = () => {
       <div className={styles.blocks}>
         <Slider {...settings}>
           <div className={styles.item} >
-            <Image src={ImgThreeOne} alt='Аватарка' className={styles.item} width={270} height={300} />
+            <Image src={ImgThreeOne} alt='Аватарка' className={styles.item} width={250} height={300} />
           </div>
           <div>
-            <Image src={ImgThreeTwo} alt='Аватарка' className={styles.item} width={260} height={300} /> 
+            <Image src={ImgThreeTwo} alt='Аватарка' className={styles.item} width={240} height={300} /> 
           </div>
           <div>
-            <Image src={ImgThreeThree} alt='Аватарка' className={styles.item} width={330} height={300} /> 
+            <Image src={ImgThreeThree} alt='Аватарка' className={styles.item} width={270} height={300} /> 
           </div>
           <div>
-            <Image src={ImgThreeFour} alt='Аватарка' className={styles.item} width={250} height={300} /> 
+            <Image src={ImgThreeFour} alt='Аватарка' className={styles.item} width={240} height={300} /> 
           </div>
           <div>
-            <Image src={ImgThreeFive} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+            <Image src={ImgThreeFive} alt='Аватарка' className={styles.item} width={240} height={300} /> 
           </div>
           <div>
-            <Image src={ImgThreeSix} alt='Аватарка' className={styles.item} width={350} height={300} /> 
+            <Image src={ImgThreeSix} alt='Аватарка' className={styles.item} width={270} height={300} /> 
           </div>
           <div>
-            <Image src={ImgThreeSeven} alt='Аватарка' className={styles.item} width={350} height={300} /> 
+            <Image src={ImgThreeSeven} alt='Аватарка' className={styles.item} width={290} height={300} /> 
           </div>
           <div>
-            <Image src={ImgThreeEight} alt='Аватарка' className={styles.item} width={280} height={300} /> 
+            <Image src={ImgThreeEight} alt='Аватарка' className={styles.item} width={350} height={300} /> 
           </div>
           <div>
-            <Image src={ImgThreeNine} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+            <Image src={ImgThreeNine} alt='Аватарка' className={styles.item} width={320} height={300} /> 
           </div>
           <div>
             <Image src={ImgThreeTen} alt='Аватарка' className={styles.item} width={340} height={300} /> 
           </div>
           <div>
-            <Image src={ImgThreeEleven} alt='Аватарка' className={styles.item} width={300} height={300} /> 
+            <Image src={ImgThreeEleven} alt='Аватарка' className={styles.item} width={330} height={300} /> 
           </div>
         </Slider>
       </div>
