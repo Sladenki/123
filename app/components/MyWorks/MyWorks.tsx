@@ -10,12 +10,44 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-import ImgOne from '../../../images/MyWorks/1.jpg'
-import ImgTwo from '../../../images/MyWorks/2.jpg'
-import ImgThree from '../../../images/MyWorks/3.jpg'
-import ImgFour from '../../../images/MyWorks/4.jpg'
-import ImgFive from '../../../images/MyWorks/5.jpg'
-import ImgSix from '../../../images/MyWorks/6.jpg'
+// 1
+import ImgOneOne from '../../../images/MyWorks/1/1.jpeg'
+import ImgOneTwo from '../../../images/MyWorks/1/2.jpeg'
+import ImgOneThree from '../../../images/MyWorks/1/3.jpeg'
+import ImgOneFour from '../../../images/MyWorks/1/4.jpeg'
+import ImgOneFive from '../../../images/MyWorks/1/5.jpg'
+import ImgOneSix from '../../../images/MyWorks/1/6.jpg'
+import ImgOneSeven from '../../../images/MyWorks/1/7.jpg'
+import ImgOneEight from '../../../images/MyWorks/1/8.jpeg'
+import ImgOneNine from '../../../images/MyWorks/1/9.jpeg'
+import ImgOneTen from '../../../images/MyWorks/1/10.jpeg'
+import ImgOneEleven from '../../../images/MyWorks/1/11.jpeg'
+
+// 2
+import ImgTwoOne from '../../../images/MyWorks/2/1.jpeg'
+import ImgTwoTwo from '../../../images/MyWorks/2/2.jpeg'
+import ImgTwoThree from '../../../images/MyWorks/2/3.jpg'
+import ImgTwoFour from '../../../images/MyWorks/2/4.jpg'
+import ImgTwoFive from '../../../images/MyWorks/2/5.jpg'
+import ImgTwoSix from '../../../images/MyWorks/2/6.jpg'
+import ImgTwoSeven from '../../../images/MyWorks/2/7.jpg'
+import ImgTwoEight from '../../../images/MyWorks/2/8.jpg'
+import ImgTwoNine from '../../../images/MyWorks/2/9.jpeg'
+import ImgTwoTen from '../../../images/MyWorks/2/10.jpeg'
+import ImgTwoEleven from '../../../images/MyWorks/2/11.jpeg'
+
+// 3
+import ImgThreeOne from '../../../images/MyWorks/3/1.jpg'
+import ImgThreeTwo from '../../../images/MyWorks/3/2.jpeg'
+import ImgThreeThree from '../../../images/MyWorks/3/3.jpg'
+import ImgThreeFour from '../../../images/MyWorks/3/4.jpg'
+import ImgThreeFive from '../../../images/MyWorks/3/5.png'
+import ImgThreeSix from '../../../images/MyWorks/3/6.jpeg'
+import ImgThreeSeven from '../../../images/MyWorks/3/7.jpeg'
+import ImgThreeEight from '../../../images/MyWorks/3/8.jpg'
+import ImgThreeNine from '../../../images/MyWorks/3/9.jpg'
+import ImgThreeTen from '../../../images/MyWorks/3/10.jpg'
+import ImgThreeEleven from '../../../images/MyWorks/3/11.jpeg'
 
 const MyWorks = () => {
 
@@ -61,27 +93,6 @@ const MyWorks = () => {
     slidesToShow: slidesPerGroup,
     slidesToScroll: slidesPerView,
     initialSlide: 1,
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 3,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 600,
-    //     settings: {
-    //       slidesToShow: 2,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       dots: false,
-    //     },
-    //   },
-    // ],
   };
 
   return (
@@ -94,22 +105,37 @@ const MyWorks = () => {
         <div className={styles.blocks}>
           <Slider {...settings}>
             <div className={styles.item} >
-              <Image src={ImgOne} alt='Аватарка' className={styles.item} width={400} height={250} />
+              <Image src={ImgOneOne} alt='Аватарка' className={styles.item} width={270} height={300} />
             </div>
             <div>
-              <Image src={ImgTwo} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+              <Image src={ImgOneTwo} alt='Аватарка' className={styles.item} width={270} height={300} /> 
             </div>
             <div>
-              <Image src={ImgThree} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+              <Image src={ImgOneThree} alt='Аватарка' className={styles.item} width={270} height={300} /> 
             </div>
             <div>
-              <Image src={ImgFour} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+              <Image src={ImgOneFour} alt='Аватарка' className={styles.item} width={320} height={300} /> 
             </div>
             <div>
-              <Image src={ImgFive} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+              <Image src={ImgOneFive} alt='Аватарка' className={styles.item} width={270} height={300} /> 
             </div>
             <div>
-              <Image src={ImgSix} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+              <Image src={ImgOneSix} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+            </div>
+            <div>
+              <Image src={ImgOneSeven} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+            </div>
+            <div>
+              <Image src={ImgOneEight} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+            </div>
+            <div>
+              <Image src={ImgOneNine} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+            </div>
+            <div>
+              <Image src={ImgOneTen} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+            </div>
+            <div>
+              <Image src={ImgOneEleven} alt='Аватарка' className={styles.item} width={270} height={300} /> 
             </div>
           </Slider>
       </div>
@@ -118,22 +144,37 @@ const MyWorks = () => {
       <div className={styles.blocks}>
         <Slider {...settings}>
           <div className={styles.item} >
-            <Image src={ImgOne} alt='Аватарка' className={styles.item} width={400} height={250} />
+            <Image src={ImgTwoOne} alt='Аватарка' className={styles.item} width={270} height={300} />
           </div>
           <div>
-            <Image src={ImgTwo} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+            <Image src={ImgTwoTwo} alt='Аватарка' className={styles.item} width={250} height={300} /> 
           </div>
           <div>
-            <Image src={ImgThree} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+            <Image src={ImgTwoThree} alt='Аватарка' className={styles.item} width={260} height={300} /> 
           </div>
           <div>
-            <Image src={ImgFour} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+            <Image src={ImgTwoFour} alt='Аватарка' className={styles.item} width={280} height={300} /> 
           </div>
           <div>
-            <Image src={ImgFive} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+            <Image src={ImgTwoFive} alt='Аватарка' className={styles.item} width={270} height={300} /> 
           </div>
           <div>
-            <Image src={ImgSix} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+            <Image src={ImgTwoSix} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+          </div>
+          <div>
+            <Image src={ImgTwoSeven} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+          </div>
+          <div>
+            <Image src={ImgTwoEight} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+          </div>
+          <div>
+            <Image src={ImgTwoNine} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+          </div>
+          <div>
+            <Image src={ImgTwoTen} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+          </div>
+          <div>
+            <Image src={ImgTwoEleven} alt='Аватарка' className={styles.item} width={270} height={300} /> 
           </div>
         </Slider>
       </div>
@@ -142,22 +183,37 @@ const MyWorks = () => {
       <div className={styles.blocks}>
         <Slider {...settings}>
           <div className={styles.item} >
-            <Image src={ImgOne} alt='Аватарка' className={styles.item} width={400} height={250} />
+            <Image src={ImgThreeOne} alt='Аватарка' className={styles.item} width={270} height={300} />
           </div>
           <div>
-            <Image src={ImgTwo} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+            <Image src={ImgThreeTwo} alt='Аватарка' className={styles.item} width={260} height={300} /> 
           </div>
           <div>
-            <Image src={ImgThree} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+            <Image src={ImgThreeThree} alt='Аватарка' className={styles.item} width={330} height={300} /> 
           </div>
           <div>
-            <Image src={ImgFour} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+            <Image src={ImgThreeFour} alt='Аватарка' className={styles.item} width={250} height={300} /> 
           </div>
           <div>
-            <Image src={ImgFive} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+            <Image src={ImgThreeFive} alt='Аватарка' className={styles.item} width={270} height={300} /> 
           </div>
           <div>
-            <Image src={ImgSix} alt='Аватарка' className={styles.item} width={400} height={250} /> 
+            <Image src={ImgThreeSix} alt='Аватарка' className={styles.item} width={350} height={300} /> 
+          </div>
+          <div>
+            <Image src={ImgThreeSeven} alt='Аватарка' className={styles.item} width={350} height={300} /> 
+          </div>
+          <div>
+            <Image src={ImgThreeEight} alt='Аватарка' className={styles.item} width={280} height={300} /> 
+          </div>
+          <div>
+            <Image src={ImgThreeNine} alt='Аватарка' className={styles.item} width={270} height={300} /> 
+          </div>
+          <div>
+            <Image src={ImgThreeTen} alt='Аватарка' className={styles.item} width={340} height={300} /> 
+          </div>
+          <div>
+            <Image src={ImgThreeEleven} alt='Аватарка' className={styles.item} width={300} height={300} /> 
           </div>
         </Slider>
       </div>

@@ -41,7 +41,7 @@ const AboutMe = () => {
             animate="visible"
             transition={{ duration: 0.5 }}
           >
-          <Image src={Ava} alt='Аватарка' className={styles.AvaPhoto} width={140} height={140} /> 
+          <Image src={Ava} alt='Аватарка' className={styles.AvaPhoto} width={140} height={140}  /> 
         </motion.div>
 
         <div className={styles.textAboutMe}>

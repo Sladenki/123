@@ -11,16 +11,16 @@
 
 
     .blocks{ 
-        height: 300px;
+        height: 350px;
         border: 1px solid #F6BEC2;
-        padding: 15px 25px 20px 25px;
+        padding: 15px 25px 35px 25px;
         // background-color: black;
         width: 90%;
         overflow: hidden;
 
         .item{
-            height: 250px;
-            width: 450px;
+            // height: 250px;
+            // width: 270px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -30,25 +30,25 @@
     }
 }
 
-@media only screen and (max-width: 1700px)  {
-    .MyWorksWrapper{
-        .blocks{
-            .item{
-                width: 350px;
-            }
-        }
-    }
+// @media only screen and (max-width: 1700px)  {
+//     .MyWorksWrapper{
+//         .blocks{
+//             .item{
+//                 width: 300px;
+//             }
+//         }
+//     }
 
-}
+// }
 
-@media only screen and (max-width: 1300px)  {
-    .MyWorksWrapper{
-        .blocks{
-            .item{
-                width: 300px;
-            }
-        }
-    }
+// @media only screen and (max-width: 1300px)  {
+//     .MyWorksWrapper{
+//         .blocks{
+//             .item{
+//                 width: 250px;
+//             }
+//         }
+//     }
 
-}
+// }
 
