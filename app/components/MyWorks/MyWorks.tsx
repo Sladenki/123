@@ -75,9 +75,9 @@ const MyWorks = () => {
         setIsDots(false)
       }
 
-      if (window.innerWidth < 600) {
-        setIsCenter(false)
-      }
+      // if (window.innerWidth < 600) {
+      //   setIsCenter(false)
+      // }
     };
 
     window.addEventListener('resize', handleResize);
@@ -95,7 +95,7 @@ const MyWorks = () => {
     speed: 500,
     slidesToShow: slidesPerGroup,
     slidesToScroll: slidesPerView,
-    initialSlide: 1,
+    initialSlide: 0,
   };
 
   return (
