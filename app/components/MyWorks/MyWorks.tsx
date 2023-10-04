@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import styles from './MyWorks.module.scss'
 import Title from '@/app/ui/Title/Title'
@@ -49,6 +49,13 @@ import ImgThreeNine from '../../../images/MyWorks/3/9.jpeg'
 import ImgThreeTen from '../../../images/MyWorks/3/10.jpeg'
 import ImgThreeEleven from '../../../images/MyWorks/3/11.jpg'
 
+// Просмотр фото
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
+
+import {SlideshowLightbox} from 'lightbox.js-react'
+import 'lightbox.js-react/dist/index.css'
+
 const MyWorks = () => {
 
   const [slidesPerView, setSlidesPerView] = useState(3);
@@ -88,12 +95,16 @@ const MyWorks = () => {
   var settings = {
     dots: isDots,
     infinite: true,
-    centerMode: isCenter,
+    // centerMode: isCenter,
     speed: 500,
     slidesToShow: slidesPerGroup,
     slidesToScroll: slidesPerView,
     initialSlide: 0,
   };
+
+
+
+
 
   return (
     <div className={styles.MyWorksWrapper}>
@@ -103,16 +114,28 @@ const MyWorks = () => {
 
         {/* 1 */}
         <div className={styles.blocks}>
+       
           <Slider {...settings}>
+         
+                  
             <div className={styles.itemWrapper}>
               <div className={styles.item} >
-                <Image src={ImgOneOne} alt='Аватарка' className={`${styles.item} `} />
+          
+              <PhotoProvider>
+              <PhotoView  src='https://disk.yandex.ru/i/hH-UK4qHXPkmoQ'>
+                    <Image src={ImgOneOne} alt='Аватарка' className={`${styles.item} `}  />
+                    </PhotoView>
+                    </PhotoProvider>
+                 
+             
               </div>
             </div>
+           
+                
 
             <div className={styles.itemWrapper}>
               <div>
-                <Image src={ImgOneTwo} alt='Аватарка' className={`${styles.item} `} /> 
+                <Image src={ImgOneTwo} alt='Аватарка' className={`${styles.item} `} />  
               </div>
             </div>
 
@@ -170,6 +193,7 @@ const MyWorks = () => {
               </div>
             </div>
           </Slider>
+          
       </div>
 
       {/* 2 */}
