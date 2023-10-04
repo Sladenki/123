@@ -19,16 +19,14 @@
         overflow: hidden;
 
         .itemWrapper{
+            width: 350px;
+            height: 350px;
+            overflow: hidden;
 
             .item{
-                // object-fit: cover;
-                // width: 370px;
-                // height: 370px;
-         
-
-                width: 370px;
-                height: 370px;
-                object-fit: contain;
+                width: 350px;
+                height: 450px;
+                object-fit: cover;         
             }
         }
 
@@ -40,9 +38,12 @@
     .MyWorksWrapper{
         .blocks{ 
             .itemWrapper{
+                width: 300px;
+                height: 300px;
+
                 .item{
                     width: 300px;
-                    height: 300px;
+                    height: 400px;
                 }
             }
         }
@@ -53,10 +54,14 @@
     .MyWorksWrapper{
         .blocks{ 
             height: 350px;
+
             .itemWrapper{
+                width: 250px;
+                height: 250px;
+
                 .item{
                     width: 250px;
-                    height: 250px;
+                    height: 350px;
                 }
             }
         }
@@ -68,9 +73,12 @@
         .blocks{ 
             height: 280px;
             .itemWrapper{
+                width: 200px;
+                height: 200px;
+
                 .item{
                     width: 200px;
-                    height: 200px;
+                    height: 300px;
                 }
             }
         }
@@ -82,9 +90,12 @@
         .blocks{ 
             height: 250px;
             .itemWrapper{
+                width: 180px;
+                height: 180px;
+
                 .item{
-                    width: 180px;
-                    height: 180px;
+                   width: 180px;
+                    height: 280px;
                 }
             }
         }
@@ -96,9 +107,12 @@
         .blocks{ 
             height: 220px;
             .itemWrapper{
+                width: 150px;
+                height: 150px;
+
                 .item{
                     width: 150px;
-                    height: 150px;
+                    height: 250px;
                 }
             }
         }
