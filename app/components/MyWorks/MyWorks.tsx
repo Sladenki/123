@@ -69,15 +69,12 @@ const MyWorks = () => {
         setSlidesPerGroup(2);
       }
 
-      if (window.innerWidth < 820) {
+      if (window.innerWidth < 890) {
         setSlidesPerView(1);
         setSlidesPerGroup(1);
         setIsDots(false)
       }
 
-      // if (window.innerWidth < 600) {
-      //   setIsCenter(false)
-      // }
     };
 
     window.addEventListener('resize', handleResize);
@@ -107,38 +104,70 @@ const MyWorks = () => {
         {/* 1 */}
         <div className={styles.blocks}>
           <Slider {...settings}>
-            <div className={styles.item} >
-              <Image src={ImgOneOne} alt='Аватарка' className={`${styles.item} object-fit-contain`} />
+            <div className={styles.itemWrapper}>
+              <div className={styles.item} >
+                <Image src={ImgOneOne} alt='Аватарка' className={`${styles.item} `} />
+              </div>
             </div>
-            <div>
-              <Image src={ImgOneTwo} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+            <div className={styles.itemWrapper}>
+              <div>
+                <Image src={ImgOneTwo} alt='Аватарка' className={`${styles.item} `} /> 
+              </div>
             </div>
-            <div>
-              <Image src={ImgOneThree} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+            <div className={styles.itemWrapper}>
+              <div>
+                <Image src={ImgOneThree} alt='Аватарка' className={`${styles.item} `} /> 
+              </div>
             </div>
-            <div>
-              <Image src={ImgOneFour} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+            <div className={styles.itemWrapper}>
+              <div>
+                <Image src={ImgOneFour} alt='Аватарка' className={`${styles.item} `} /> 
+              </div>
             </div>
-            <div>
-              <Image src={ImgOneFive} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+            
+            <div className={styles.itemWrapper}>
+              <div>
+                <Image src={ImgOneFive} alt='Аватарка' className={`${styles.item} `} /> 
+              </div>
             </div>
-            <div>
-              <Image src={ImgOneSix} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+            <div className={styles.itemWrapper}>
+              <div>
+                <Image src={ImgOneSix} alt='Аватарка' className={`${styles.item} `} /> 
+              </div>
             </div>
-            <div>
-              <Image src={ImgOneSeven} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+            <div className={styles.itemWrapper}>
+              <div>
+                <Image src={ImgOneSeven} alt='Аватарка' className={`${styles.item} `} /> 
+              </div>
             </div>
-            <div>
-              <Image src={ImgOneEight} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+            <div className={styles.itemWrapper}>
+              <div>
+                <Image src={ImgOneEight} alt='Аватарка' className={`${styles.item} `} /> 
+              </div>
             </div>
-            <div>
-              <Image src={ImgOneNine} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+            <div className={styles.itemWrapper}>
+              <div>
+                <Image src={ImgOneNine} alt='Аватарка' className={`${styles.item} `} /> 
+              </div>
             </div>
-            <div>
-              <Image src={ImgOneTen} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+            <div className={styles.itemWrapper}>
+              <div>
+                <Image src={ImgOneTen} alt='Аватарка' className={`${styles.item} `} /> 
+              </div>
             </div>
-            <div>
-              <Image src={ImgOneEleven} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+            <div className={styles.itemWrapper}>
+              <div>
+                <Image src={ImgOneEleven} alt='Аватарка' className={`${styles.item} `} /> 
+              </div>
             </div>
           </Slider>
       </div>
@@ -146,78 +175,145 @@ const MyWorks = () => {
       {/* 2 */}
       <div className={styles.blocks}>
         <Slider {...settings}>
-          <div className={styles.item} >
-            <Image src={ImgTwoOne} alt='Аватарка' className={`${styles.item} object-fit-contain`} />
+          <div className={styles.itemWrapper}>
+            <div className={styles.item} >
+              <Image src={ImgTwoOne} alt='Аватарка' className={`${styles.item}`} />
+            </div>
           </div>
-          <div>
-            <Image src={ImgTwoTwo} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgTwoTwo} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgTwoThree} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+          
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgTwoThree} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgTwoFour} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgTwoFour} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgTwoFive} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgTwoFive} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgTwoSix} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgTwoSix} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgTwoSeven} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgTwoSeven} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgTwoEight} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgTwoEight} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgTwoNine} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgTwoNine} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgTwoTen} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgTwoTen} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgTwoEleven} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgTwoEleven} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
+
         </Slider>
       </div>
 
       {/* 3 */}
       <div className={styles.blocks}>
         <Slider {...settings}>
-          <div className={styles.item} >
-            <Image src={ImgThreeOne} alt='Аватарка' className={`${styles.item} object-fit-contain`} />
+
+          <div className={styles.itemWrapper}>
+            <div className={styles.item} >
+              <Image src={ImgThreeOne} alt='Аватарка' className={`${styles.item}`} />
+            </div>
           </div>
-          <div>
-            <Image src={ImgThreeTwo} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgThreeTwo} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgThreeThree} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgThreeThree} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgThreeFour} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgThreeFour} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgThreeFive} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgThreeFive} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgThreeSix} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgThreeSix} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgThreeSeven} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgThreeSeven} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgThreeEight} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgThreeEight} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgThreeNine} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgThreeNine} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgThreeTen} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgThreeTen} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
-          <div>
-            <Image src={ImgThreeEleven} alt='Аватарка' className={`${styles.item} object-fit-contain`} /> 
+
+          <div className={styles.itemWrapper}>
+            <div>
+              <Image src={ImgThreeEleven} alt='Аватарка' className={`${styles.item}`} /> 
+            </div>
           </div>
+          
         </Slider>
       </div>
 

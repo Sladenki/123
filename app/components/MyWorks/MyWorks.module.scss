@@ -11,30 +11,97 @@
 
 
     .blocks{ 
-        height: 350px;
+        height: 450px;
         border: 1px solid #F6BEC2;
         padding: 15px 25px 35px 25px;
         // background-color: black;
         width: 90%;
         overflow: hidden;
 
-        .item{
-            width: 300px;
-            height: 370px;
-            object-fit: cover;
-            margin: 0 auto;
+        .itemWrapper{
 
-            // width: auto;
-            // height: auto;
-            // // object-fit: contain;
-            // max-width: 300px;
-            // max-height: 300px;
-            // background-position: center;
-            // background-repeat: no-repeat;
-            // background-size: cover;
+            .item{
+                // object-fit: cover;
+                // width: 370px;
+                // height: 370px;
+         
+
+                width: 370px;
+                height: 370px;
+                object-fit: contain;
+            }
         }
 
+    }
+}
 
+
+@media only screen and (max-width: 1450px)  {
+    .MyWorksWrapper{
+        .blocks{ 
+            .itemWrapper{
+                .item{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 520px)  {
+    .MyWorksWrapper{
+        .blocks{ 
+            height: 350px;
+            .itemWrapper{
+                .item{
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 460px)  {
+    .MyWorksWrapper{
+        .blocks{ 
+            height: 280px;
+            .itemWrapper{
+                .item{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 410px)  {
+    .MyWorksWrapper{
+        .blocks{ 
+            height: 250px;
+            .itemWrapper{
+                .item{
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 380px)  {
+    .MyWorksWrapper{
+        .blocks{ 
+            height: 220px;
+            .itemWrapper{
+                .item{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
     }
 }
 
