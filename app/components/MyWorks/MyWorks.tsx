@@ -50,11 +50,6 @@ import ImgThreeTen from '../../../images/MyWorks/3/10.jpeg'
 import ImgThreeEleven from '../../../images/MyWorks/3/11.jpg'
 
 // Просмотр фото
-import { PhotoProvider, PhotoView } from 'react-photo-view';
-import 'react-photo-view/dist/react-photo-view.css';
-
-import {SlideshowLightbox} from 'lightbox.js-react'
-import 'lightbox.js-react/dist/index.css'
 
 const MyWorks = () => {
 
@@ -121,11 +116,9 @@ const MyWorks = () => {
             <div className={styles.itemWrapper}>
               <div className={styles.item} >
           
-              <PhotoProvider>
-              <PhotoView  src='https://disk.yandex.ru/i/hH-UK4qHXPkmoQ'>
+       
                     <Image src={ImgOneOne} alt='Аватарка' className={`${styles.item} `}  />
-                    </PhotoView>
-                    </PhotoProvider>
+              
                  
              
               </div>
