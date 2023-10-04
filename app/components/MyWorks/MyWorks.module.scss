@@ -14,7 +14,6 @@
         height: 450px;
         border: 1px solid #F6BEC2;
         padding: 15px 25px 35px 25px;
-        // background-color: black;
         width: 90%;
         overflow: hidden;
 
@@ -23,9 +22,21 @@
             height: 350px;
             overflow: hidden;
 
-            .item{
+            .large{
                 width: 350px;
-                height: 450px;
+                height: 350px;
+                object-fit: cover;         
+            }
+
+            .tall{
+                width: 350px;
+                height: 350px;
+                object-fit: cover;  
+            }
+
+            .item{
+                width: 330px;
+                height: 400px;
                 object-fit: cover;         
             }
         }
@@ -33,69 +44,87 @@
     }
 }
 
-
-@media only screen and (max-width: 1450px)  {
+@media only screen and (max-width: 1300px)  {
     .MyWorksWrapper{
         .blocks{ 
-            .itemWrapper{
-                width: 300px;
-                height: 300px;
-
-                .item{
-                    width: 300px;
-                    height: 400px;
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 520px)  {
-    .MyWorksWrapper{
-        .blocks{ 
-            height: 350px;
+            height: 300px;
 
             .itemWrapper{
                 width: 250px;
                 height: 250px;
 
+                .large{
+                    width: 320px;
+                    height: 320px;
+                    object-fit: cover;         
+                }
+
                 .item{
-                    width: 250px;
-                    height: 350px;
+                    width: 320px;
+                    height: 400px;
+                }
+
+                .tall{
+                    width: 320px;
+                    height: 320px;
                 }
             }
         }
     }
 }
 
-@media only screen and (max-width: 460px)  {
+@media only screen and (max-width: 1240px)  {
     .MyWorksWrapper{
         .blocks{ 
-            height: 280px;
+            height: 250px;
+
             .itemWrapper{
                 width: 200px;
                 height: 200px;
 
                 .item{
-                    width: 200px;
-                    height: 300px;
+                    width: 230px;
+                    height: 320px;
+                }
+
+                .large{
+                    width: 230px;
+                    height: 200px;
+                    object-fit: cover;         
+                }
+
+                .tall{
+                    width: 230px;
+                    height: 260px;
                 }
             }
         }
     }
 }
 
-@media only screen and (max-width: 410px)  {
+@media only screen and (max-width: 430px)  {
     .MyWorksWrapper{
         .blocks{ 
-            height: 250px;
+            height: 200px;
+
             .itemWrapper{
                 width: 180px;
                 height: 180px;
 
                 .item{
                    width: 180px;
-                    height: 280px;
+                    height: 230px;
+                }
+
+                .large{
+                    width: 180px;
+                    height: 150px;
+                    object-fit: cover;         
+                }
+
+                .tall{
+                    width: 180px;
+                    height: 230px;
                 }
             }
         }
@@ -105,18 +134,145 @@
 @media only screen and (max-width: 380px)  {
     .MyWorksWrapper{
         .blocks{ 
-            height: 220px;
+            height: 200px;
+
             .itemWrapper{
                 width: 150px;
                 height: 150px;
 
                 .item{
-                    width: 150px;
-                    height: 250px;
+                   width: 150px;
+                    height: 200px;
+                }
+
+                .large{
+                    width: 180px;
+                    height: 150px;
+                    object-fit: cover;         
+                }
+
+                .tall{
+                    width: 130px;
+                    height: 180px;
                 }
             }
         }
     }
 }
+
+@media only screen and (max-width: 340px)  {
+    .MyWorksWrapper{
+        .blocks{ 
+            height: 170px;
+
+            .itemWrapper{
+                width: 130px;
+                height: 130px;
+
+                .item{
+                   width: 130px;
+                    height: 180px;
+                }
+
+                .large{
+                    width: 130px;
+                    height: 120px;
+                    object-fit: cover;         
+                }
+
+                .tall{
+                    width: 130px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+
+
+// @media only screen and (max-width: 1450px)  {
+//     .MyWorksWrapper{
+//         .blocks{ 
+//             .itemWrapper{
+//                 width: 300px;
+//                 height: 300px;
+
+//                 .item{
+//                     width: 320px;
+//                     height: 400px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media only screen and (max-width: 520px)  {
+//     .MyWorksWrapper{
+//         .blocks{ 
+//             height: 350px;
+
+//             .itemWrapper{
+//                 width: 250px;
+//                 height: 250px;
+
+//                 .item{
+//                     width: 250px;
+//                     height: 350px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media only screen and (max-width: 460px)  {
+//     .MyWorksWrapper{
+//         .blocks{ 
+//             height: 280px;
+//             .itemWrapper{
+//                 width: 200px;
+//                 height: 200px;
+
+//                 .item{
+//                     width: 200px;
+//                     height: 300px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media only screen and (max-width: 410px)  {
+//     .MyWorksWrapper{
+//         .blocks{ 
+//             height: 250px;
+//             .itemWrapper{
+//                 width: 180px;
+//                 height: 180px;
+
+//                 .item{
+//                    width: 180px;
+//                     height: 280px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media only screen and (max-width: 380px)  {
+//     .MyWorksWrapper{
+//         .blocks{ 
+//             height: 220px;
+//             .itemWrapper{
+//                 width: 150px;
+//                 height: 150px;
+
+//                 .item{
+//                     width: 150px;
+//                     height: 300px;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 

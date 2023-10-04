@@ -142,7 +142,7 @@ const MyWorks = () => {
 
             <div className={styles.itemWrapper}>
               <div>
-                <Image src={ImgOneSeven} alt='Аватарка' className={`${styles.item} `} /> 
+                <Image src={ImgOneSeven} alt='Аватарка' className={`${styles.large} `} /> 
               </div>
             </div>
 
@@ -250,7 +250,7 @@ const MyWorks = () => {
 
           <div className={styles.itemWrapper}>
             <div className={styles.item} >
-              <Image src={ImgThreeOne} alt='Аватарка' className={`${styles.item}`} />
+              <Image src={ImgThreeOne} alt='Аватарка' className={`${styles.tall}`} />
             </div>
           </div>
 
@@ -292,25 +292,25 @@ const MyWorks = () => {
 
           <div className={styles.itemWrapper}>
             <div>
-              <Image src={ImgThreeEight} alt='Аватарка' className={`${styles.item}`} /> 
+              <Image src={ImgThreeEight} alt='Аватарка' className={`${styles.large}`} /> 
             </div>
           </div>
 
           <div className={styles.itemWrapper}>
             <div>
-              <Image src={ImgThreeNine} alt='Аватарка' className={`${styles.item}`} /> 
+              <Image src={ImgThreeNine} alt='Аватарка' className={`${styles.large}`} /> 
             </div>
           </div>
 
           <div className={styles.itemWrapper}>
             <div>
-              <Image src={ImgThreeTen} alt='Аватарка' className={`${styles.item}`} /> 
+              <Image src={ImgThreeTen} alt='Аватарка' className={`${styles.large}`} /> 
             </div>
           </div>
 
           <div className={styles.itemWrapper}>
             <div>
-              <Image src={ImgThreeEleven} alt='Аватарка' className={`${styles.item}`} /> 
+              <Image src={ImgThreeEleven} alt='Аватарка' className={`${styles.large}`} /> 
             </div>
           </div>
           
