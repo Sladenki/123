@@ -1,11 +1,6 @@
-import React, { FC } from 'react'
+import React from 'react'
 import styles from './MyServices.module.scss'
 import Title from '@/app/ui/Title/Title'
-import MakeUp from './MakeUp/MakeUp'
-import VisagisteLearning from './VisagisteLearning/VisagisteLearning'
-import Styling from './Styling/Styling'
-import Brows from './Brows/Brows'
-import BrowsLearning from './BrowsLearning/BrowsLearning'
 
 const MyServices = () => {
   return (

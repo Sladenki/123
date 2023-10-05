@@ -1,10 +1,9 @@
 "use client"
 
-import React, { FC, useEffect, useRef, useState } from 'react'
+import React, { FC } from 'react'
 import styles from './ForYou.module.scss'
 import TitleWithOutBorder from '@/app/ui/TitleWithOutBorder/TitleWithOutBorder'
 import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer';
 
 
 const textOne = 'МАКИЯЖ ЛЮБОЙ СЛОЖНОСТИ 🔝 от дневного до грима!'

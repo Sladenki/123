@@ -1,10 +1,9 @@
 "use client"
 
-import React, { FC, useEffect, useRef, useState } from 'react'
+import React, { FC } from 'react'
 import styles from './MakeUp.module.scss'
 import TitleWithOutBorder from '@/app/ui/TitleWithOutBorder/TitleWithOutBorder'
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 
 
 const MakeUp: FC<{isVisible: boolean}> = ({isVisible}) => {
