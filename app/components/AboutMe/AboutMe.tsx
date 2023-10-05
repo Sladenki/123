@@ -2,10 +2,11 @@
 
 import React from 'react'
 import Image from 'next/image'
+import ExportedImage from "next-image-export-optimizer";
 import styles from './AboutMe.module.scss'
 
 // Аватарка
-import Ava from '../../../images/ava.jpeg'
+import Ava from '/public/images/ava.jpeg'
 import Title from '../../ui/Title/Title'
 import { motion } from 'framer-motion'
 
@@ -41,7 +42,7 @@ const AboutMe = () => {
             animate="visible"
             transition={{ duration: 0.5 }}
           >
-          <Image src={Ava} alt='Аватарка' className={styles.AvaPhoto} width={140} height={140}  /> 
+          <ExportedImage src={Ava} alt='Аватарка' className={styles.AvaPhoto} width={140} height={140}  /> 
         </motion.div>
 
         <div className={styles.textAboutMe}>
@@ -104,7 +105,7 @@ const AboutMe = () => {
             animate="visible"
             transition={{ duration: 0.5 }}
           >
-          <Image src={Ava} alt='Аватарка' className={styles.AvaPhoto} width={140} height={140} /> 
+          <ExportedImage src={Ava} alt='Аватарка' className={styles.AvaPhoto} width={140} height={140}  /> 
         </motion.div>
 
         <div className={styles.textAboutMe}>

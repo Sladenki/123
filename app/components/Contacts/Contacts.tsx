@@ -2,11 +2,12 @@ import React from 'react'
 import styles from './Contacts.module.scss'
 import Title from '@/app/ui/Title/Title'
 import Image from 'next/image'
+import ExportedImage from "next-image-export-optimizer";
 import Link from 'next/link'
 
-import InstagramSVG from '../../../images/socialNetworks/instagram.svg'
-import TelegramSVG from '../../../images/socialNetworks/telegram.svg'
-import VKSVG from '../../../images/socialNetworks/vk.svg'
+import InstagramSVG from '/public/images/socialNetworks/instagram.svg'
+import TelegramSVG from '/public/images/socialNetworks/telegram.svg'
+import VKSVG from '/public/images/socialNetworks/vk.svg'
 
 const InstLink = 'https://www.instagram.com/aksinya_777'
 
@@ -27,7 +28,7 @@ const Contacts = () => {
             <Link href={InstLink} target="_blank">
                 <div className={styles.SocialBlock}>
                     <div className={styles.SocialNetworkItem}>
-                        <Image src={InstagramSVG} width={30} height={30} alt="Instagram" />
+                        <ExportedImage src={InstagramSVG} width={30} height={30} alt="Instagram" />
                     </div>
 
                     <span className={styles.textLink}>@aksinya_777</span>
@@ -37,7 +38,7 @@ const Contacts = () => {
             <Link href={TgLink} target="_blank">
                 <div className={styles.SocialBlock}>
                     <div className={styles.SocialNetworkItem}>
-                        <Image src={TelegramSVG} width={30} height={30} alt="Telegram" />
+                        <ExportedImage src={TelegramSVG} width={30} height={30} alt="Telegram" />
                     </div>
 
                     <span className={styles.textLink}>@aksinya_7777</span>
@@ -47,7 +48,7 @@ const Contacts = () => {
             <Link href={VkLink} target="_blank">
                 <div className={styles.SocialBlock}>
                     <div className={styles.SocialNetworkItem}>
-                        <Image src={VKSVG} width={30} height={30} alt="VK" />
+                        <ExportedImage src={VKSVG} width={30} height={30} alt="VK" />
                     </div>
 
                     <span className={styles.textLink}>@aks777</span>
